@@ -10,13 +10,13 @@ $(document).ready(function() {
   let result;
   if (food === "sushi" && vacation === "1") {
     result = "JavaScript";
-  } else if (food === "steak" && vacation === "2"){
+  } else if (food === "steak" && vacation === "2") {
     result = "C#";
   } else if (food === "hotpot" && vacation === "3" || food === "kbbq" && vacation === "3") {
     result = "Python";
   } else {
     result = "Swift";
   }
-  $('#output').text(`${name}, based on your selections, we recommend the first programming language you should learn is...${result}`);
+  $('#output').text(`${name}, based on your selections, we recommend the first programming language you should learn is ${result}`);
   });
 });

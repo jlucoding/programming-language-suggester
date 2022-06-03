@@ -1,4 +1,20 @@
+.btn {
+  display: block;
+  margin: 30px;
+}
+
+form {
+  margin: 100px;
+}
+
 #output {
-  margin: 10px auto;
-  font-size: 20px;
+  margin: 20px;
+  color: darkblue;
+  font-size: 35px;
+}
+
+body {
+  background-color: rgb(245, 204, 72);
+  color: rgb(0, 140, 255);
+  font-size: 25px;
 }
