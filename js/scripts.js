@@ -1,8 +1,9 @@
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
   event.preventDefault();
-  const name = $("#userName").val();
+  const name = $("#name").val();
   const birthday = $("#born").val();
+  // const birthyear = parseInt(birthday.substr(6,9));
   const food = $("input:radio[name=food]:checked").val();
   const vacation = $("#vacation").val();
 
@@ -16,6 +17,6 @@ $(document).ready(function() {
   } else {
     result = "Swift";
   }
-  $('#output').text(result);
+  $('#output').text(`${name}, based on your selections, we recommend the first programming language you should learn is...${result}`);
   });
 });
