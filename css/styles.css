@@ -1,20 +1,40 @@
 .btn {
   display: block;
-  margin: 30px;
+  /* display: none; */
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 form {
-  margin: 100px;
+  margin: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.radio {
+  font-size: 17px;
 }
 
 #output {
-  margin: 20px;
-  color: darkblue;
+  margin: auto;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: rgb(64, 32, 204);
   font-size: 35px;
 }
 
 body {
-  background-color: rgb(245, 204, 72);
+  background-color: rgb(245, 228, 72);
   color: rgb(0, 140, 255);
-  font-size: 25px;
+  font-size: 20px;
 }
+
+h1{
+  color: rgb(64, 32, 204);
+}
+
+h2 {
+  color: rgb(47, 73, 73);
+}
+
