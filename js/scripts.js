@@ -1,37 +1,21 @@
-// Business logic interface conditional statements go here 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// UI go here 
 $(document).ready(function() {
-  $('form').submit(function(event) {
+  $("form#survey").submit(function(event) {
   event.preventDefault();
-  // birthday
+  const name = $("#userName").val();
   const birthday = $("#born").val();
-
-  // food 
   const food = $("input:radio[name=food]:checked").val();
-
-
-  // vacation
   const vacation = $("#vacation").val();
-  
+
+  let result;
+  if (food === "sushi" && vacation === "1") {
+    result = "JavaScript";
+  } else if (food === "steak" && vacation === "2"){
+    result = "C#";
+  } else if (food === "hotpot" && vacation === "3" || food === "kbbq" && vacation === "3") {
+    result = "Python";
+  } else {
+    result = "Swift";
+  }
+  $('#output').text(result);
   });
 });

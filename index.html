@@ -12,49 +12,33 @@
     <h1>Programming Language Suggester</h1>
     <h2>Can't decide which programming language to learn first? Take this survey and let us help you choose which one to learn first!</h2>
     
-    <!-- Name -->
-
-    <form id="name">
+    <form id="survey">
       <div class="form-group">
         <label for="userName">Name:</label>
         <input id="userName" class="form-control" type="text" />
       </div>
-    </form>
-
-
-    <!-- Email address -->
-
-    <form id="email">
+       
       <div class="form-group">
         <label for="info1">Email Address:</label>
         <input id="info1" class="form-control" type="text" />
       </div>
-    </form>
-
-    <!-- Phone number -->
-
-    <form id="phone">
+        
       <div class="form-group">
         <label for="info2">Phone Number:</label>
         <input id="info2" class="form-control" type="text" />
       </div>
-    </form>
     
-    <!-- Birthday -->
-
-    <div class="form-group">
-      <label for="born">Date of birth:</label>
-      <input id="born" class="form-control" type="date">
-    </div>
-    
-    <!-- Food -->
-
-    <label for="food">Your ideal dinner on a Wednesday night:</label>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="sushi" checked>
-        Sushi
-      </label>
+      <div class="form-group">
+        <label for="born">Date of Birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+      
+      <p>Your ideal dinner on a Wednesday night:</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="food" value="sushi" checked>
+          Sushi
+        </label>
       </div>
       <div class="radio">
       <label>
@@ -75,20 +59,21 @@
       </label>
     </div>
 
-    <!-- Vacation -->
-
-    <label for="vacation">Your ideal getaway vacation:</label>
+    <p>Your ideal getaway vacation:</p>
     <select class="form-control" id="vacation">
-      <option>Sitting on the beach relaxing</option>
-      <option>Camping and hiking in the mountains</option>
-      <option>A trip to a major city</option>
+      <option value="1">Sitting on the beach relaxing</option>
+      <option value="2">Camping and hiking in the mountains</option>
+      <option value="3">A trip to a major city</option>
     </select>
 
-    <!-- add a submit button? -->
-
-
     
-    <div id="output"><h3>Based on your selections, we recommend the first programming language you should learn is...</h3></div>
+    <button type="submit" class="btn">See my result!</button>
+  </form>
+    
+    <h3>Based on your selections, we recommend the first programming language you should learn is...</h3>
+    <div id="output">
+      
+    </div>
 
 
 
