@@ -10,9 +10,8 @@ $(document).ready(function() {
 
   const name = $("#name").val();
   const birthday = $("#born").val();
-  
-  // const birthyear = parseInt(birthday.substr(6,9));
-
+  // const birthyear = parseInt(birthday.substr(0,4));
+  // console.log(birthyear);
   const food = $("input:radio[name=food]:checked").val();
   const vacation = $("#vacation").val();
 
@@ -26,6 +25,6 @@ $(document).ready(function() {
   } else {
     result = "Swift";
   }
-  $('#output').text(`${name}, based on your selections, we recommend the first programming language you should learn is ${result}`);
+  $('#output').text(`${name}, based on your selections, we recommend the first programming language you should learn is ${result}.`);
   });
 });
